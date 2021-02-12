@@ -4,6 +4,9 @@ VERSION = '0.0.1'
 DESCRIPTION = 'Wrapper for scraping simplemachineforums'
 LONG_DESCRIPTION = 'Wrapper Library for scraping simplemachineforums with their main url only.'
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 # Setting up
 setup(
        # the name must match the folder name 'verysimplemodule'
@@ -12,7 +15,8 @@ setup(
         author="Utsav Magar",
         author_email="utsavmagar88728@gmail.com",
         description=DESCRIPTION,
-        long_description=LONG_DESCRIPTION,
+        long_description=long_description,
+        long_description_content_type="text/markdown",
         packages=find_packages(),
         url='https://github.com/ryuuzu/smfscaper',
         install_requires=['requests', 'beautifulsoup4'],
