@@ -14,7 +14,9 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
-        install_requires=['requests', 'beautifulsoup4'], # add any additional packages that 
+        url='https://github.com/ryuuzu/smfscaper',
+        install_requires=['requests', 'beautifulsoup4'],
+        python_requires='>=3.6', # add any additional packages that 
         # needs to be installed along with your package. Eg: 'caer'
         
         keywords=['python', 'first package', 'smf', 'simplemachineforums', 'smfscraper', 'smfapi'],
