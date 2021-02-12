@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1' 
+VERSION = '0.0.2' 
 DESCRIPTION = 'Wrapper for scraping simplemachineforums'
-LONG_DESCRIPTION = 'Wrapper Library for scraping simplemachineforums with their main url only.'
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
