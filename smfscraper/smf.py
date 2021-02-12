@@ -116,3 +116,10 @@ class SMFscraper():
                     return None
                 else: 
                     return postsList
+    
+    def getLatestPost(self, boardID):
+        """
+        Returns the latests non-sticky/unlocked post.
+        """
+        posts = self.getNormalPosts(boardID)
+        return posts[0]
