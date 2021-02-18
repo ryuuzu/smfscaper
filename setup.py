@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.2' 
+VERSION = '0.0.3' 
 DESCRIPTION = 'Wrapper for scraping simplemachineforums'
 
 with open("README.md", "r", encoding="utf-8") as fh:
@@ -19,8 +19,7 @@ setup(
         packages=find_packages(),
         url='https://github.com/ryuuzu/smfscaper',
         install_requires=['requests', 'beautifulsoup4'],
-        python_requires='>=3.6', # add any additional packages that 
-        # needs to be installed along with your package. Eg: 'caer'
+        python_requires='>=3.6',
         
         keywords=['python', 'first package', 'smf', 'simplemachineforums', 'smfscraper', 'smfapi'],
         classifiers= [
